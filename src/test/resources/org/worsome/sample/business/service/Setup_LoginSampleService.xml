@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <LOGIN_SAMPLE ID="test" PASSWORD="pass" VERSION="2000-01-01 01:01:01.000000" />
+    <LOGIN_SAMPLE ID="test1" PASSWORD="pass1" VERSION="2000-01-01 01:01:01.000000" />
+</dataset>
