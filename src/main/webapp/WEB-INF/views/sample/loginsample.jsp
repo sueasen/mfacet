@@ -48,6 +48,10 @@
                 <c:url value="/sample/loginSampleInsert" var="url"/>
                 <a href="${url}">Create an account</a>
             </p>
+            <p class="text-center">
+                <a href="/mfacet">Top page</a>
+            </p>
+
 <!--
             <form:form action="/sample/loginSampleInsert" method="get" cssClass="form-signin">
                 <input type="submit" class="btn btn-lg btn-success btn-block" name="insert" value="Create an account" />
