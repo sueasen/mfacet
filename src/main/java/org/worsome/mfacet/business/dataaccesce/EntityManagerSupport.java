@@ -21,10 +21,10 @@ public class EntityManagerSupport<E> {
     private static final String COL_NAME_VERSION = "version";
 
     /** entityManager */
-    final private EntityManager entityManager;
+    private final EntityManager entityManager;
 
     /** entityClass */
-    final private Class<E> entityClass;
+    private final Class<E> entityClass;
 
     /**
      * コンストラクタ
@@ -58,6 +58,8 @@ public class EntityManagerSupport<E> {
     /**
      * criteriaQuery を取得します。
      *
+     * @param <T> entity の型
+     * @param paramClass Entityクラス
      * @return entityManager
      */
     public <T> CriteriaQuery<T> createQuery(Class<T> paramClass) {
@@ -67,7 +69,9 @@ public class EntityManagerSupport<E> {
     /**
      * entity を取得します。
      *
-     * @param entityClass Entityクラス
+     * @param <T> entity の型
+     * @param <K> key の型
+     * @param paramClass Entityクラス
      * @param key キー
      * @return entity
      */
@@ -78,6 +82,7 @@ public class EntityManagerSupport<E> {
     /**
      * entity を取得します。
      *
+     * @param <K> key の型
      * @param key キー
      * @return entity
      */
@@ -88,6 +93,8 @@ public class EntityManagerSupport<E> {
     /**
      * entity を取得します。
      *
+     * @param <K> key の型
+     * @param <V> version の型
      * @param key キー
      * @param version バージョン
      * @return entity
@@ -99,7 +106,10 @@ public class EntityManagerSupport<E> {
     /**
      * entity を取得します。
      *
-     * @param entityClass Entityクラス
+     * @param <T> entity の型
+     * @param <K> key の型
+     * @param <V> version の型
+     * @param paramClass Entityクラス
      * @param key キー
      * @param version バージョン
      * @return entity
@@ -116,7 +126,8 @@ public class EntityManagerSupport<E> {
     /**
      * entity リストを取得します。
      *
-     * @param entityClass Entityクラス
+     * @param <T> entity の型
+     * @param paramClass Entityクラス
      * @return entity リスト
      */
     public <T> List<T> findAll(Class<T> paramClass) {
@@ -127,7 +138,6 @@ public class EntityManagerSupport<E> {
     /**
      * entity リストを取得します。
      *
-     * @param entityClass Entityクラス
      * @return entity リスト
      */
     public List<E> findAll() {
@@ -137,6 +147,7 @@ public class EntityManagerSupport<E> {
     /**
      * entity を更新します。
      *
+     * @param <T> entity の型
      * @param entity entity
      * @return entity
      */
@@ -147,6 +158,7 @@ public class EntityManagerSupport<E> {
     /**
      * entity を更新します。
      *
+     * @param <T> entity の型
      * @param entity entity
      */
     public <T> void insert(T entity) {
@@ -156,6 +168,7 @@ public class EntityManagerSupport<E> {
     /**
      * entity を削除します。
      *
+     * @param <T> entity の型
      * @param entity entity
      */
     public <T> void delete(T entity) {

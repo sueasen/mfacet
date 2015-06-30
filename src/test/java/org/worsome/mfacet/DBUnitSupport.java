@@ -25,11 +25,11 @@ import org.springframework.beans.factory.BeanFactory;
  */
 public class DBUnitSupport {
 
-    /** connection */
-    final private BeanFactory beanFactory;
+    /** beanFactory */
+    private final BeanFactory beanFactory;
 
     /** class */
-    final private Class<?> clazz;
+    private final Class<?> clazz;
 
     /**
      * コンストラクタ
@@ -46,7 +46,6 @@ public class DBUnitSupport {
     /**
      * DBコネクションを作成します
      *
-     * @param beanFactory BeanFactory
      * @return DatabaseConnection
      * @throws Exception Exception
      */

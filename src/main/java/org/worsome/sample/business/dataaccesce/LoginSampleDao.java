@@ -47,16 +47,22 @@ public interface LoginSampleDao {
 
     /**
      * 更新します。<br>
+     *
+     * @param loginSample ログインサンプル
      */
     void update(LoginSample loginSample);
 
     /**
      * 追加します。<br>
+     *
+     * @param loginSample ログインサンプル
      */
     void insert(LoginSample loginSample);
 
     /**
      * 削除します。<br>
+     *
+     * @param loginSample ログインサンプル
      */
     void delete(LoginSample loginSample);
 

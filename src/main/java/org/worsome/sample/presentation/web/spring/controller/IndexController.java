@@ -21,6 +21,9 @@ public class IndexController {
     public IndexController() {
     }
 
+    /**
+     * @return 処理
+     */
     @RequestMapping("/sample/index")
     public String hello() {
         return "/sample/index2";

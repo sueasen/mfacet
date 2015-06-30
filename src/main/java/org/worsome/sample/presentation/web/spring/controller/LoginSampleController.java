@@ -59,7 +59,8 @@ public class LoginSampleController {
      * ログインします。<br>
      *
      * @param loginDto loginDto
-     * @param errors errors
+     * @param result result
+     * @param model model
      * @return 処理
      */
     @RequestMapping(value = "/sample/loginsample", method = POST)

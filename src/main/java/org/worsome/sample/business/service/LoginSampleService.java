@@ -19,7 +19,7 @@ public interface LoginSampleService {
      * @param password password
      * @return loginUser
      */
-    public LoginSample login(String id, String password);
+    LoginSample login(String id, String password);
 
     /**
      * ログインサンプルを取得します。
@@ -27,34 +27,34 @@ public interface LoginSampleService {
      * @param id id
      * @return loginSample
      */
-    public LoginSample find(String id);
+    LoginSample find(String id);
 
     /**
      * ログインサンプルを全件取得します。
      *
      * @return loginTestリスト
      */
-    public List<LoginSample> findAll();
+    List<LoginSample> findAll();
 
     /**
      * ログインサンプルを更新します。
      *
      * @param dto dto
      */
-    public void update(LoginSampleDto dto);
+    void update(LoginSampleDto dto);
 
     /**
      * ログインサンプルを登録します。
      *
      * @param dto dto
      */
-    public void insert(LoginSampleDto dto);
+    void insert(LoginSampleDto dto);
 
     /**
      * ログインサンプルを削除します。
      *
      * @param dto dto
      */
-    public void delete(LoginSampleDto dto);
+    void delete(LoginSampleDto dto);
 
 }

@@ -35,7 +35,7 @@ import org.worsome.sample.presentation.base.dto.LoginSampleDto;
 public class LoginSampleServiceImplTest {
 
     /**
-     * {@link org.worsome.sample.business.service.implementation.LoginSampleServiceImpl#LoginTestServiceImpl(org.worsome.sample.business.dataaccesce.LoginSampleDao)} のためのテスト・メソッド。
+     * {@link LoginSampleServiceImpl#LoginTestServiceImpl(LoginSampleDao)} のためのテスト・メソッド。
      */
     @Test
     public void testLoginSampleServiceImpl() {
@@ -43,7 +43,7 @@ public class LoginSampleServiceImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.service.implementation.LoginSampleServiceImpl#login(java.lang.String, java.lang.String)} のためのテスト・メソッド。<br>
+     * {@link LoginSampleServiceImpl#login(String, String)} のためのテスト・メソッド。<br>
      * id, password がある場合、dao より loginSample を取得することを確認します。
      */
     @Test
@@ -60,7 +60,7 @@ public class LoginSampleServiceImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.service.implementation.LoginSampleServiceImpl#login(java.lang.String, java.lang.String)} のためのテスト・メソッド。<br>
+     * {@link LoginSampleServiceImpl#login(String, String)} のためのテスト・メソッド。<br>
      * id が空文字, null の場合、null を取得することを確認します。
      */
     @Test
@@ -81,7 +81,7 @@ public class LoginSampleServiceImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.service.implementation.LoginSampleServiceImpl#login(java.lang.String, java.lang.String)} のためのテスト・メソッド。<br>
+     * {@link LoginSampleServiceImpl#login(String, String)} のためのテスト・メソッド。<br>
      * password が空文字, null の場合、null を取得することを確認します。
      */
     @Test
@@ -102,7 +102,7 @@ public class LoginSampleServiceImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.service.implementation.LoginSampleServiceImpl#find(java.lang.String)} のためのテスト・メソッド。
+     * {@link LoginSampleServiceImpl#find(String)} のためのテスト・メソッド。
      * id がある場合、dao より loginSample を取得することを確認します。
      */
     @Test
@@ -118,7 +118,7 @@ public class LoginSampleServiceImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.service.implementation.LoginSampleServiceImpl#find(java.lang.String)} のためのテスト・メソッド。
+     * {@link LoginSampleServiceImpl#find(String)} のためのテスト・メソッド。
      * id が空文字, null の場合、null を取得することを確認します。
      */
     @Test
@@ -137,7 +137,7 @@ public class LoginSampleServiceImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.service.implementation.LoginSampleServiceImpl#findAll()} のためのテスト・メソッド。
+     * {@link LoginSampleServiceImpl#findAll()} のためのテスト・メソッド。
      */
     @Test
     public void testFindAll() {
@@ -154,7 +154,7 @@ public class LoginSampleServiceImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.service.implementation.LoginSampleServiceImpl#update(org.worsome.sample.presentation.base.dto.LoginSampleDto)} のためのテスト・メソッド。<br>
+     * {@link LoginSampleServiceImpl#update(LoginSampleDto)} のためのテスト・メソッド。<br>
      * 引数がある場合、update が実行されることを確認します。
      */
     @Test
@@ -172,7 +172,7 @@ public class LoginSampleServiceImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.service.implementation.LoginSampleServiceImpl#update(org.worsome.sample.presentation.base.dto.LoginSampleDto)} のためのテスト・メソッド。
+     * {@link LoginSampleServiceImpl#update(LoginSampleDto)} のためのテスト・メソッド。
      * 引数がない場合、update が実行されないことを確認します。
      */
     @Test
@@ -189,7 +189,7 @@ public class LoginSampleServiceImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.service.implementation.LoginSampleServiceImpl#insert(org.worsome.sample.presentation.base.dto.LoginSampleDto)} のためのテスト・メソッド。
+     * {@link LoginSampleServiceImpl#insert(LoginSampleDto)} のためのテスト・メソッド。
      * 引数がある場合、insert が実行されることを確認します。
      */
     @Test
@@ -207,7 +207,7 @@ public class LoginSampleServiceImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.service.implementation.LoginSampleServiceImpl#insert(org.worsome.sample.presentation.base.dto.LoginSampleDto)} のためのテスト・メソッド。
+     * {@link LoginSampleServiceImpl#insert(LoginSampleDto)} のためのテスト・メソッド。
      * 引数がない場合、insert が実行されないことを確認します。
      */
     @Test
@@ -224,7 +224,7 @@ public class LoginSampleServiceImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.service.implementation.LoginSampleServiceImpl#delete(org.worsome.sample.presentation.base.dto.LoginSampleDto)} のためのテスト・メソッド。
+     * {@link LoginSampleServiceImpl#delete(LoginSampleDto)} のためのテスト・メソッド。
      * 引数がある場合、delete が実行されることを確認します。
      */
     @Test
@@ -242,7 +242,7 @@ public class LoginSampleServiceImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.service.implementation.LoginSampleServiceImpl#delete(org.worsome.sample.presentation.base.dto.LoginSampleDto)} のためのテスト・メソッド。
+     * {@link LoginSampleServiceImpl#delete(LoginSampleDto)} のためのテスト・メソッド。
      * 引数がない場合、delete が実行されないことを確認します。
      */
     @Test

@@ -41,8 +41,8 @@ import org.worsome.sample.business.domain.base.LoginSample;
 public class LoginSampleDaoImplTest {
 
     /**
-     * {@link org.worsome.sample.business.dataaccesce.implementation.LoginSampleDaoImpl#loginSampleDaoImpl()} のためのテスト・メソッド。<br>
-     * {@link org.worsome.sample.business.dataaccesce.implementation.LoginSampleDaoImpl#loginSampleDaoImpl(EntityManager)} のためのテスト・メソッド。
+     * {@link LoginSampleDaoImpl#loginSampleDaoImpl()} のためのテスト・メソッド。<br>
+     * {@link LoginSampleDaoImpl#loginSampleDaoImpl(EntityManager)} のためのテスト・メソッド。
      */
     @Test
     public void testLoginSampleServiceImpl() {
@@ -51,7 +51,7 @@ public class LoginSampleDaoImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.dataaccesce.implementation.LoginSampleDaoImpl#find(java.lang.String)} のためのテスト・メソッド。
+     * {@link LoginSampleDaoImpl#find(String)} のためのテスト・メソッド。
      */
     @Test
     public void testFindString() {
@@ -68,7 +68,7 @@ public class LoginSampleDaoImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.dataaccesce.implementation.LoginSampleDaoImpl#find(java.lang.String, java.lang.String)} のためのテスト・メソッド。<br>
+     * {@link LoginSampleDaoImpl#find(String, String)} のためのテスト・メソッド。<br>
      * id, password が一致する testLogin が存在する場合、取得できることを確認します。
      */
     @Test
@@ -88,7 +88,7 @@ public class LoginSampleDaoImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.dataaccesce.implementation.LoginSampleDaoImpl#find(java.lang.String, java.lang.String)} のためのテスト・メソッド。<br>
+     * {@link LoginSampleDaoImpl#find(String, String)} のためのテスト・メソッド。<br>
      * id が一致する testLogin が存在しない場合、null になる事を確認します。
      */
     @Test
@@ -105,7 +105,7 @@ public class LoginSampleDaoImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.dataaccesce.implementation.LoginSampleDaoImpl#find(java.lang.String, java.lang.String)} のためのテスト・メソッド。<br>
+     * {@link LoginSampleDaoImpl#find(String, String)} のためのテスト・メソッド。<br>
      * password が一致する testLogin が存在しない場合、null になる事を確認します。
      */
     @Test
@@ -125,7 +125,7 @@ public class LoginSampleDaoImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.dataaccesce.implementation.LoginSampleDaoImpl#findByVersion(java.lang.String, java.util.Date)} のためのテスト・メソッド。<br>
+     * {@link LoginSampleDaoImpl#findByVersion(String, Date)} のためのテスト・メソッド。<br>
      * id, version が一致する loginSample が存在する場合、取得できることをテストします。
      */
     @SuppressWarnings({ "unchecked", "rawtypes" })
@@ -158,7 +158,7 @@ public class LoginSampleDaoImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.dataaccesce.implementation.LoginSampleDaoImpl#findByVersion(java.lang.String, java.util.Date)} のためのテスト・メソッド。<br>
+     * {@link LoginSampleDaoImpl#findByVersion(String, Date)} のためのテスト・メソッド。<br>
      * id, version が一致する loginSample が存在しない場合、null になることをテストします。
      */
     @SuppressWarnings({ "unchecked", "rawtypes" })
@@ -190,7 +190,7 @@ public class LoginSampleDaoImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.dataaccesce.implementation.LoginSampleDaoImpl#findAll()} のためのテスト・メソッド。
+     * {@link LoginSampleDaoImpl#findAll()} のためのテスト・メソッド。
      */
     @SuppressWarnings("unchecked")
     @Test
@@ -214,7 +214,7 @@ public class LoginSampleDaoImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.dataaccesce.implementation.LoginSampleDaoImpl#update(org.worsome.sample.business.domain.base.LoginSample)} のためのテスト・メソッド。
+     * {@link LoginSampleDaoImpl#update(LoginSample)} のためのテスト・メソッド。
      */
     @Test
     public void testUpdate() {
@@ -228,7 +228,7 @@ public class LoginSampleDaoImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.dataaccesce.implementation.LoginSampleDaoImpl#insert(org.worsome.sample.business.domain.base.LoginSample)} のためのテスト・メソッド。
+     * {@link LoginSampleDaoImpl#insert(LoginSample)} のためのテスト・メソッド。
      */
     @Test
     public void testInsert() {
@@ -242,7 +242,7 @@ public class LoginSampleDaoImplTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.dataaccesce.implementation.LoginSampleDaoImpl#delete(org.worsome.sample.business.domain.base.LoginSample)} のためのテスト・メソッド。
+     * {@link LoginSampleDaoImpl#delete(LoginSample)} のためのテスト・メソッド。
      */
     @Test
     public void testDelete() {

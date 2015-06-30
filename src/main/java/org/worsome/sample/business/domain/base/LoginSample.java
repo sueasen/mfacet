@@ -10,19 +10,28 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Version;
 
+/**
+ * {@link LoginSample}
+ *
+ * @author SUEHARAA1
+ */
 @Entity
 @Table(name = "LOGIN_SAMPLE")
 public class LoginSample implements java.io.Serializable {
 
+    /** serialVersionUID */
     private static final long serialVersionUID = 3428490997353904743L;
 
+    /** id */
     @Id
     @Column(name = "ID")
     private String id;
 
+    /** password */
     @Column(name = "PASSWORD")
     private String password;
 
+    /** version */
     @Column(name = "VERSION")
     @Temporal(TemporalType.TIMESTAMP)
     @Version

@@ -7,6 +7,7 @@ import javax.persistence.PersistenceContext;
  * {@link AbstractDao}
  *
  * @author SueharaA1
+ * @param <E> entity の型
  */
 public abstract class AbstractDao<E> {
 
@@ -18,7 +19,7 @@ public abstract class AbstractDao<E> {
     private EntityManagerSupport<E> entityManagerSupport;
 
     /** entityClass */
-    final private Class<E> entityClass;
+    private final Class<E> entityClass;
 
     /**
      * コンストラクタ

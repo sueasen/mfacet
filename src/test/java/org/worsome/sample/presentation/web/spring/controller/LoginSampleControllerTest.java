@@ -37,7 +37,7 @@ import org.worsome.sample.presentation.base.dto.LoginSampleDto;
 public class LoginSampleControllerTest {
 
     /**
-     * {@link org.worsome.sample.presentation.web.spring.controller.LoginSampleController#LoginTestController(org.worsome.sample.business.service.LoginSampleService)} のためのテスト・メソッド。
+     * {@link LoginSampleController#LoginTestController(LoginSampleService)} のためのテスト・メソッド。
      */
     @Test
     public void testLoginSampleController() {
@@ -45,7 +45,7 @@ public class LoginSampleControllerTest {
     }
 
     /**
-     * {@link org.worsome.sample.presentation.web.spring.controller.LoginSampleController#entryLoginForm(org.springframework.ui.Model)} のためのテスト・メソッド。
+     * {@link LoginSampleController#entryLoginForm(Model)} のためのテスト・メソッド。
      */
     @Test
     public void testEntryLoginForm() {
@@ -57,7 +57,7 @@ public class LoginSampleControllerTest {
     }
 
     /**
-     * {@link org.worsome.sample.presentation.web.spring.controller.LoginSampleController#login(org.worsome.sample.presentation.base.dto.LoginDto, org.springframework.validation.BindingResult, org.springframework.ui.Model)} のためのテスト・メソッド。<br>
+     * {@link LoginSampleController#login(LoginDto, BindingResult, Model)} のためのテスト・メソッド。<br>
      * ログイン成功時にログイン一覧にリダイレクトすることをの確認します。
      */
     @Test
@@ -79,7 +79,7 @@ public class LoginSampleControllerTest {
     }
 
     /**
-     * {@link org.worsome.sample.presentation.web.spring.controller.LoginSampleController#login(org.worsome.sample.presentation.base.dto.LoginDto, org.springframework.validation.BindingResult, org.springframework.ui.Model)} のためのテスト・メソッド。<br>
+     * {@link LoginSampleController#login(LoginDto, BindingResult, Model)} のためのテスト・メソッド。<br>
      * 入力エラー時にログインに戻る事を確認します
      */
     @Test
@@ -98,7 +98,7 @@ public class LoginSampleControllerTest {
     }
 
     /**
-     * {@link org.worsome.sample.presentation.web.spring.controller.LoginSampleController#login(org.worsome.sample.presentation.base.dto.LoginDto, org.springframework.validation.BindingResult, org.springframework.ui.Model)} のためのテスト・メソッド。<br>
+     * {@link LoginSampleController#login(LoginDto, BindingResult, Model)} のためのテスト・メソッド。<br>
      * ログインサンプルが存在しない場合、model にエラーを設定してログインに戻る事を確認します。
      */
     @Test
@@ -122,7 +122,7 @@ public class LoginSampleControllerTest {
     }
 
     /**
-     * {@link org.worsome.sample.presentation.web.spring.controller.LoginSampleController#findAll(org.springframework.ui.Model)} のためのテスト・メソッド。
+     * {@link LoginSampleController#findAll(Model)} のためのテスト・メソッド。
      */
     @Test
     public void testFindAll() {
@@ -139,7 +139,7 @@ public class LoginSampleControllerTest {
     }
 
     /**
-     * {@link org.worsome.sample.presentation.web.spring.controller.LoginSampleController#entryLoginUserFormById(java.lang.String, org.springframework.ui.Model)} のためのテスト・メソッド。
+     * {@link LoginSampleController#entryLoginUserFormById(String, Model)} のためのテスト・メソッド。
      * ログインサンプルが存在の場合、Model にログインサンプルDTO が設定される事を確認します。
      */
     @Test
@@ -161,7 +161,7 @@ public class LoginSampleControllerTest {
     }
 
     /**
-     * {@link org.worsome.sample.presentation.web.spring.controller.LoginSampleController#entryLoginUserFormById(java.lang.String, org.springframework.ui.Model)} のためのテスト・メソッド。
+     * {@link LoginSampleController#entryLoginUserFormById(String, Model)} のためのテスト・メソッド。
      * ログインサンプルが存在無の場合、Model にログインサンプルDTO が設定される事を確認します。
      */
     @Test
@@ -177,7 +177,7 @@ public class LoginSampleControllerTest {
     }
 
     /**
-     * {@link org.worsome.sample.presentation.web.spring.controller.LoginSampleController#update(org.worsome.sample.presentation.base.dto.LoginSampleDto, org.springframework.validation.BindingResult, org.springframework.ui.Model)} のためのテスト・メソッド。
+     * {@link LoginSampleController#update(LoginSampleDto, BindingResult, Model)} のためのテスト・メソッド。
      * 更新を実行する場合の確認をします。
      */
     @Test
@@ -196,7 +196,7 @@ public class LoginSampleControllerTest {
     }
 
     /**
-     * {@link org.worsome.sample.presentation.web.spring.controller.LoginSampleController#update(org.worsome.sample.presentation.base.dto.LoginSampleDto, org.springframework.validation.BindingResult, org.springframework.ui.Model)} のためのテスト・メソッド。
+     * {@link LoginSampleController#update(LoginSampleDto, BindingResult, Model)} のためのテスト・メソッド。
      * 入力エラー時に更新新しないことを確認をします。
      */
     @Test
@@ -214,7 +214,7 @@ public class LoginSampleControllerTest {
     }
 
     /**
-     * {@link org.worsome.sample.presentation.web.spring.controller.LoginSampleController#delete(org.worsome.sample.presentation.base.dto.LoginSampleDto, org.springframework.validation.BindingResult, org.springframework.ui.Model)} のためのテスト・メソッド。
+     * {@link LoginSampleController#delete(LoginSampleDto, BindingResult, Model)} のためのテスト・メソッド。
      */
     @Test
     public void testDelete() {
@@ -231,7 +231,7 @@ public class LoginSampleControllerTest {
     }
 
     /**
-     * {@link org.worsome.sample.presentation.web.spring.controller.LoginSampleController#entryLoginUserForm(org.springframework.ui.Model)} のためのテスト・メソッド。
+     * {@link LoginSampleController#entryLoginUserForm(Model)} のためのテスト・メソッド。
      */
     @Test
     public void testEntryLoginUserForm() {
@@ -245,7 +245,7 @@ public class LoginSampleControllerTest {
     }
 
     /**
-     * {@link org.worsome.sample.presentation.web.spring.controller.LoginSampleController#insert(org.worsome.sample.presentation.base.dto.LoginSampleDto, org.springframework.validation.BindingResult, org.springframework.ui.Model)} のためのテスト・メソッド。<br>
+     * {@link LoginSampleController#insert(LoginSampleDto, BindingResult, Model)} のためのテスト・メソッド。<br>
      * 追加実行時を確認します。
      */
     @Test
@@ -265,7 +265,7 @@ public class LoginSampleControllerTest {
     }
 
     /**
-     * {@link org.worsome.sample.presentation.web.spring.controller.LoginSampleController#insert(org.worsome.sample.presentation.base.dto.LoginSampleDto, org.springframework.validation.BindingResult, org.springframework.ui.Model)} のためのテスト・メソッド。<br>
+     * {@link LoginSampleController#insert(LoginSampleDto, BindingResult, Model)} のためのテスト・メソッド。<br>
      * 入力エラー時に追加実行しないことを確認します。
      */
     @Test

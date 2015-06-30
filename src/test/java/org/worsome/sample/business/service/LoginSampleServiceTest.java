@@ -71,7 +71,7 @@ public class LoginSampleServiceTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.service.LoginSampleService#login(java.lang.String, java.lang.String)} のためのテスト・メソッド。
+     * {@link LoginSampleService#login(String, String)} のためのテスト・メソッド。
      *
      * @throws Exception 例外
      */
@@ -88,7 +88,7 @@ public class LoginSampleServiceTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.service.LoginSampleService#login(java.lang.String, java.lang.String)} のためのテスト・メソッド。
+     * {@link LoginSampleService#login(String, String)} のためのテスト・メソッド。
      *
      * @throws Exception 例外
      */
@@ -103,7 +103,7 @@ public class LoginSampleServiceTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.service.LoginSampleService#find(java.lang.String)} のためのテスト・メソッド。
+     * {@link LoginSampleService#find(String)} のためのテスト・メソッド。
      *
      * @throws Exception 例外
      */
@@ -119,7 +119,7 @@ public class LoginSampleServiceTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.service.LoginSampleService#find(java.lang.String)} のためのテスト・メソッド。
+     * {@link LoginSampleService#find(String)} のためのテスト・メソッド。
      *
      * @throws Exception 例外
      */
@@ -133,7 +133,7 @@ public class LoginSampleServiceTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.service.LoginSampleService#findAll()} のためのテスト・メソッド。
+     * {@link LoginSampleService#findAll()} のためのテスト・メソッド。
      *
      * @throws Exception 例外
      */
@@ -154,7 +154,7 @@ public class LoginSampleServiceTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.service.LoginSampleService#update(org.worsome.sample.presentation.base.dto.LoginSampleDto)} のためのテスト・メソッド。
+     * {@link LoginSampleService#update(LoginSampleDto)} のためのテスト・メソッド。
      *
      * @throws Exception 例外
      */
@@ -181,7 +181,7 @@ public class LoginSampleServiceTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.service.LoginSampleService#insert(org.worsome.sample.presentation.base.dto.LoginSampleDto)} のためのテスト・メソッド。
+     * {@link LoginSampleService#insert(LoginSampleDto)} のためのテスト・メソッド。
      *
      * @throws Exception 例外
      */
@@ -204,7 +204,7 @@ public class LoginSampleServiceTest {
     }
 
     /**
-     * {@link org.worsome.sample.business.service.LoginSampleService#delete(org.worsome.sample.presentation.base.dto.LoginSampleDto)} のためのテスト・メソッド。
+     * {@link LoginSampleService#delete(LoginSampleDto)} のためのテスト・メソッド。
      *
      * @throws Exception 例外
      */

@@ -23,8 +23,14 @@ public class HelloWorldController {
     public HelloWorldController() {
     }
 
+    /**
+     * @param name name
+     * @param model model
+     * @return 処理
+     */
     @RequestMapping("/sample/hello")
-    public String hello(@RequestParam(value = "name", required = false, defaultValue = "World") String name, Model model) {
+    public String hello(//
+            @RequestParam(value = "name", required = false, defaultValue = "World") String name, Model model) {
         model.addAttribute("name", name);
         return "/sample/helloworld";
     }

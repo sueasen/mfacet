@@ -16,6 +16,7 @@ import org.hibernate.validator.constraints.NotEmpty;
  */
 public class LoginDto implements Serializable {
 
+    /** serialVersionUID */
     private static final long serialVersionUID = 3428490997353904743L;
 
     /** id */
