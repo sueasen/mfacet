@@ -32,7 +32,7 @@ public interface LoginSampleService {
     /**
      * ログインサンプルを全件取得します。
      *
-     * @return loginTestリスト
+     * @return loginSampleリスト
      */
     List<LoginSample> findAll();
 

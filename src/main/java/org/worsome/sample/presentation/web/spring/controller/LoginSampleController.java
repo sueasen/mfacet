@@ -30,7 +30,7 @@ import org.worsome.sample.presentation.base.dto.LoginSampleDto;
 @Controller
 public class LoginSampleController {
 
-    /** loginTestService */
+    /** loginSampleService */
     private LoginSampleService loginSampleService;
 
     /**

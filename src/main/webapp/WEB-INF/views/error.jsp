@@ -21,7 +21,7 @@
     <body>
         <div class="container">
             <h1>error page</h1>
-            <c:url value="/sample/logintest/" var="url"/>
+            <c:url value="/sample/loginsample/" var="url"/>
             <h3><a href="${url}">sample login page</a></h3>
             <hr>
 

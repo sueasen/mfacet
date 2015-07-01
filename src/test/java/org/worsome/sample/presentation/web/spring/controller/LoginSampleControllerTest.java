@@ -37,7 +37,7 @@ import org.worsome.sample.presentation.base.dto.LoginSampleDto;
 public class LoginSampleControllerTest {
 
     /**
-     * {@link LoginSampleController#LoginTestController(LoginSampleService)} のためのテスト・メソッド。
+     * {@link LoginSampleController#LoginSampleController(LoginSampleService)} のためのテスト・メソッド。
      */
     @Test
     public void testLoginSampleController() {

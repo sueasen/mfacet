@@ -35,7 +35,7 @@ import org.worsome.sample.presentation.base.dto.LoginSampleDto;
 public class LoginSampleServiceImplTest {
 
     /**
-     * {@link LoginSampleServiceImpl#LoginTestServiceImpl(LoginSampleDao)} のためのテスト・メソッド。
+     * {@link LoginSampleServiceImpl#LoginSampleServiceImpl(LoginSampleDao)} のためのテスト・メソッド。
      */
     @Test
     public void testLoginSampleServiceImpl() {

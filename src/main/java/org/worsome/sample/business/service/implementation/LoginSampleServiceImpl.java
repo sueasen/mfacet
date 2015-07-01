@@ -19,7 +19,7 @@ import org.worsome.sample.presentation.base.dto.LoginSampleDto;
 @Service("loginSampleService")
 public class LoginSampleServiceImpl implements LoginSampleService {
 
-    /** loginTestDao */
+    /** loginSampleDao */
     private LoginSampleDao loginSampleDao;
 
     /**
