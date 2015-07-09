@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <MAIN ID="1" />
+    <MAIN ID="2" />
+    <MAIN ID="3" />
+    <SUB_A ID="11" MAIN_ID="1" />
+    <SUB_A ID="12" MAIN_ID="2" />
+    <SUB_A ID="13" MAIN_ID="3" />
+    <SUB_B ID="21" MAIN_ID="1" />
+    <SUB_B ID="22" MAIN_ID="1" />
+    <SUB_B ID="23" MAIN_ID="2" />
+    <MANY_A ID="101" />
+    <MANY_A ID="102" />
+    <MANY_A ID="103" />
+    <MANY_B ID="201" />
+    <MANY_B ID="202" />
+    <MANY_B ID="203" />
+    <MANY_A_B MANY_A_ID="101" MANY_B_ID="201" />
+    <MANY_A_B MANY_A_ID="101" MANY_B_ID="202" />
+    <MANY_A_B MANY_A_ID="102" MANY_B_ID="202" />
+</dataset>
