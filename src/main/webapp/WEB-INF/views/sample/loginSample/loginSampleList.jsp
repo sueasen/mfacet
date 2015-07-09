@@ -41,8 +41,8 @@
                 <thead>
                     <tr class="info">
                         <th>ID</th>
-                        <th>名前</th>
-                        <th>バージョン</th>
+                        <th>Password</th>
+                        <th>Version</th>
                         <td></td>
                     </tr>
                 </thead>

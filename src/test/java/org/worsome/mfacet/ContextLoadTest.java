@@ -5,7 +5,7 @@
 package org.worsome.mfacet;
 
 import org.junit.Test;
-import org.springframework.context.ApplicationContext;
+import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -15,15 +15,28 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class ContextLoadTest {
 
+    /** beanFactory */
+    private static BeanFactory beanFactory;
+
     /**
      * xml ファイルの読込をテストします
      */
-    @SuppressWarnings({ "resource", "unused" })
     @Test
     public void testXmlLoad() {
-        ApplicationContext context = new ClassPathXmlApplicationContext(//
-                "/META-INF/spring/beans-business.xml", //
-                "/META-INF/spring/beans-webmvc.xml");
+        getBeanFactory();
     }
 
+    /**
+     * beanFactory を取得します
+     *
+     * @return beanFactory
+     */
+    public static BeanFactory getBeanFactory() {
+        if (beanFactory == null) {
+            beanFactory = new ClassPathXmlApplicationContext(//
+                    "/META-INF/spring/beans-business.xml", //
+                    "/META-INF/spring/beans-webmvc.xml");
+        }
+        return beanFactory;
+    }
 }

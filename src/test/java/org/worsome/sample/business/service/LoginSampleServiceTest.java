@@ -19,7 +19,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.springframework.beans.factory.BeanFactory;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.worsome.mfacet.ContextLoadTest;
 import org.worsome.mfacet.DBUnitSupport;
 import org.worsome.sample.business.domain.base.LoginSample;
 import org.worsome.sample.presentation.base.dto.LoginSampleDto;
@@ -47,7 +47,7 @@ public class LoginSampleServiceTest {
      */
     @BeforeClass
     public static void setUpBeforeClass() throws Exception {
-        beanFactory = new ClassPathXmlApplicationContext("/META-INF/spring/beans-business.xml");
+        beanFactory = ContextLoadTest.getBeanFactory();
         dbUnitSupport = new DBUnitSupport(beanFactory, LoginSampleService.class);
     }
 
