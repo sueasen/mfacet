@@ -31,7 +31,7 @@
             <hr>
 
 <!--
-            <form:form action="/mfacet/sample/loginSampleInsert" method="get" >
+            <form:form action="${pageContext.request.contextPath}/sample/loginSampleInsert" method="get" >
                 <input type="submit" class="btn btn-lg btn-primary" name="insert" value="Insert" />
             </form:form>
             <hr>

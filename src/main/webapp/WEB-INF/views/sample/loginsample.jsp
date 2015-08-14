@@ -26,7 +26,7 @@
             <div class="card card-signin">
                 <img class="img-circle profile-img" src="<c:url value="/resources/img/avatar.png" />" alt="">
 
-                <form:form action="/mfacet/sample/loginsample" method="post" modelAttribute="loginDto" cssClass="form-signin">
+                <form:form action="${pageContext.request.contextPath}/sample/loginsample" method="post" modelAttribute="loginDto" cssClass="form-signin">
 
                     <label for="id" class="sr-only">ID: </label>
                     <form:input path="id" id="id" cssClass="form-control" placeholder="User ID" />
@@ -45,20 +45,14 @@
                 </form:form>
             </div>
             <p class="text-center">
-                <c:url value="/sample/loginSampleInsert" var="url"/>
-                <a href="${url}">Create an account</a>
+                <a href="${pageContext.request.contextPath}">Top page</a>
             </p>
             <p class="text-center">
-                <a href="/mfacet">Top page</a>
+                <a href="${pageContext.request.contextPath}">Top page</a>
             </p>
 
-<!--
-            <form:form action="/sample/loginSampleInsert" method="get" cssClass="form-signin">
-                <input type="submit" class="btn btn-lg btn-success btn-block" name="insert" value="Create an account" />
-            </form:form>
- -->
-
         </div> <!-- /container -->
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->

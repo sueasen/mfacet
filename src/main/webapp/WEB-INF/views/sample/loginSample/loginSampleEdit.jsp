@@ -27,7 +27,7 @@
             <div class="card card-signin">
                 <img class="img-circle profile-img" src="<c:url value="/resources/img/avatar.png" />" alt="">
 
-                <form:form action="/mfacet/sample/loginSampleEdit" method="post" modelAttribute="loginSampleDto" cssClass="form-signin">
+                <form:form action="${pageContext.request.contextPath}/sample/loginSampleEdit" method="post" modelAttribute="loginSampleDto" cssClass="form-signin">
 
                     <label for="id" class="sr-only">ID: </label>
                     <form:input path="id" id="id" cssClass="form-control" placeholder="User ID" readonly="true" />
@@ -47,7 +47,7 @@
                     <input type="submit" class="btn btn-lg btn-warning btn-block" name="delete" value="Delete" />
 
                 </form:form>
-                <form:form action="/mfacet/sample/loginSampleList" method="get" cssClass="form-signin">
+                <form:form action="${pageContext.request.contextPath}/sample/loginSampleList" method="get" cssClass="form-signin">
                     <input type="submit" class="btn btn-lg btn-info btn-block" name="" value="Back" />
                 </form:form>
             </div>
