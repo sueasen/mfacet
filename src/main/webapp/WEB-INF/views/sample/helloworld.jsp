@@ -12,9 +12,10 @@
         <title>mfacet sample</title>
 
         <!-- Bootstrap -->
-        <link href="<c:url value="/resources/css/bootstrap.min.css" />" rel="stylesheet">
-        <link href="<c:url value="/resources/css/todc-bootstrap.min.css" />" rel="stylesheet">
-        <link href="<c:url value="/resources/css/signin.css" />" rel="stylesheet">
+        <link rel="stylesheet" href="<c:url value="/resources/css/bootstrap.min.css" />">
+        <link rel="stylesheet" href="<c:url value="/resources/css/todc-bootstrap.min.css" />">
+        <link rel="stylesheet" href="<c:url value="/resources/css/signin.css" />" >
+        <link rel="stylesheet" href="<c:url value="/resources/css/custom.css" />">
 
     </head>
     <body>

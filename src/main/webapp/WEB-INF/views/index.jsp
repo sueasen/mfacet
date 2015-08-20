@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img class="fourth-slide" src="" alt="Fourth slide">
+                        <img class="fourth-slide" src="<c:url value="/resources/img/blank.jpg" />" alt="Fourth slide">
                         <div class="container">
                             <div class="carousel-caption">
                                 <h2>Fourth slide blank.</h2>
@@ -80,7 +80,7 @@
             </div>
 
             <!-- Under ================================================== -->
-            <div class="container marketing">
+            <div class="container marketing text-center">
                 <div class="row">
                     <div class="col-lg-3">
                         <img class="img-circle" src="<c:url value="/resources/img/img9.jpg" />" width="140" height="140">
@@ -98,7 +98,7 @@
                         <p><a class="btn btn-default" href="${pageContext.request.contextPath}/sample/inputsample" role="button">Sample Input</a></p>
                     </div>
                     <div class="col-lg-3">
-                        <img class="img-circle" src="<c:url value="" />" width="140" height="140">
+                        <img class="img-circle" src="<c:url value="/resources/img/blank.jpg" />" width="140" height="140">
                         <h2>Blank</h2>
                         <p><a class="btn btn-default" href="#" role="button">Blank</a></p>
                     </div>

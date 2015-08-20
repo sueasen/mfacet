@@ -46,75 +46,73 @@
                 <label>text</label>
                 <form:input path="text" cssClass="form-control" placeholder="Text" />
                 <form:errors path="text" cssClass="text-danger"/>
-                <br/>
+                <hr>
                 <label>textarea</label>
                 <form:textarea path="textarea" cssClass="form-control" placeholder="Textarea" />
                 <form:errors path="textarea" cssClass="text-danger"/>
-                <br/>
+                <hr>
                 <label>checkbox</label><br>
                 <form:checkbox path="checkbox" />test
                 <form:errors path="checkbox" cssClass="text-danger"/>
-                <br/><br/>
+                <hr>
                 <label>checkboxes</label><br/>
                 <form:checkboxes path="checkboxes" items="${checkBoxItems}" delimiter="&nbsp;&nbsp;&nbsp;" />
                 <form:errors path="checkboxes" cssClass="text-danger"/>
-                <br/><br/>
+                <hr>
                 <label>radiobutton</label><br/>
                 <form:radiobuttons path="radiobutton" items="${radiobuttonItems}" delimiter="&nbsp;&nbsp;&nbsp;" />
                 <form:errors path="radiobutton" cssClass="text-danger"/>
-                <br/><br/>
+                <hr>
                 <label>select</label>
                 <form:select path="select" items="${selectItems}" cssClass="form-control" />
                 <form:errors path="select" cssClass="text-danger"/>
-                <br/>
+                <hr>
                 <label>selects</label>
                 <form:select path="selects" items="${selectItems}" cssClass="form-control" multiple="true" size="3" />
                 <form:errors path="selects" cssClass="text-danger"/>
-                <br/>
-
-<!-- password -->
-<div class="form-group">
-    <label class="control-label">password</label>
-    <input type="password" class="form-control" placeholder="Password" />
-</div>
-<!-- date -->
-<div class="form-group">
-    <label class="control-label">date</label>
-    <input type="date" class="form-control"/>
-</div>
-<!-- time -->
-<div class="form-group">
-    <label class="control-label">time</label>
-    <input type="time" class="form-control"/>
-</div>
-<!-- week -->
-<div class="form-group">
-    <label class="control-label">week</label>
-    <input type="week" class="form-control"/>
-</div>
-<!-- number -->
-<div class="form-group">
-    <label class="control-label">number</label>
-    <input type="number" class="form-control"/>
-</div>
-<!-- email -->
-<div class="form-group">
-    <label class="control-label">email</label>
-    <input type="email" class="form-control"/>
-</div>
-<!-- color -->
-<div class="form-group">
-    <label class="control-label">color</label>
-    <input type="color" class="form-control"/>
-</div>
-<!-- range -->
-<div class="form-group">
-    <label class="control-label">range</label>
-    <input type="range" class="form-control"/>
-</div>
-
                 <hr>
+                <label>password</label>
+                <form:input path="password" cssClass="form-control" placeholder="Password" />
+                <form:errors path="password" cssClass="text-danger"/>
+                <hr>
+                <label>date</label>
+                <form:input type="date" path="date" cssClass="form-control" />
+                <form:errors path="date" cssClass="text-danger"/>
+                <hr>
+                <label>number</label>
+                <form:input type="number" path="number" cssClass="form-control" />
+                <form:errors path="number" cssClass="text-danger"/>
+                <hr>
+                <label>email</label>
+                <form:input type="email" path="email" cssClass="form-control" />
+                <form:errors path="email" cssClass="text-danger"/>
+                <hr>
+                <input type="submit" class="btn btn-lg btn-default" value="Input" />
+
             </form:form>
+
+            <hr>
+            <div class="form-group">
+                <label class="control-label">time</label>
+                <input type="time" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label class="control-label">week</label>
+                <input type="week" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label class="control-label">color</label>
+                <input type="color" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label class="control-label">range</label>
+                <input type="range" class="form-control"/>
+            </div>
+
+            <hr>
+            <p class="text-center">
+                <a href="${pageContext.request.contextPath}">Top page</a>
+            </p>
         </div>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

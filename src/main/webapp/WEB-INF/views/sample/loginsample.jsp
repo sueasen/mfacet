@@ -12,10 +12,10 @@
         <title>mfacet sample loginSample</title>
 
         <!-- Bootstrap -->
-        <link href="<c:url value="/resources/css/bootstrap.min.css" />" rel="stylesheet">
-        <link href="<c:url value="/resources/css/todc-bootstrap.min.css" />" rel="stylesheet">
-        <link href="<c:url value="/resources/css/signin.css" />" rel="stylesheet">
-        <link href="<c:url value="/resources/css/custom.css" />" rel="stylesheet">
+        <link rel="stylesheet" href="<c:url value="/resources/css/bootstrap.min.css" />">
+        <link rel="stylesheet" href="<c:url value="/resources/css/todc-bootstrap.min.css" />">
+        <link rel="stylesheet" href="<c:url value="/resources/css/signin.css" />" >
+        <link rel="stylesheet" href="<c:url value="/resources/css/custom.css" />">
 
     </head>
     <body>
@@ -45,7 +45,7 @@
                 </form:form>
             </div>
             <p class="text-center">
-                <a href="${pageContext.request.contextPath}">Top page</a>
+                <a href="${pageContext.request.contextPath}/sample/loginSampleInsert">Create an account</a>
             </p>
             <p class="text-center">
                 <a href="${pageContext.request.contextPath}">Top page</a>

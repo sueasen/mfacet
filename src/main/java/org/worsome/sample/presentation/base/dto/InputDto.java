@@ -5,9 +5,11 @@
 package org.worsome.sample.presentation.base.dto;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotEmpty;
+import org.springframework.format.annotation.DateTimeFormat;
 
 /**
  * {@link InputDto}
@@ -42,6 +44,19 @@ public class InputDto implements Serializable {
 
     /** selects */
     private String[] selects;
+
+    /** password */
+    private String password;
+
+    /** date */
+    @DateTimeFormat(pattern = "yyyy/MM/dd")
+    private Date date;
+
+    /** number */
+    private Integer number;
+
+    /** email */
+    private String email;
 
     /**
      * コンストラクタ
@@ -173,6 +188,78 @@ public class InputDto implements Serializable {
      */
     public void setSelects(String[] selects) {
         this.selects = selects;
+    }
+
+    /**
+     * password を取得します。
+     *
+     * @return password
+     */
+    public String getPassword() {
+        return password;
+    }
+
+    /**
+     * password を設定します。
+     *
+     * @param password セットする password
+     */
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    /**
+     * date を取得します。
+     *
+     * @return date
+     */
+    public Date getDate() {
+        return date;
+    }
+
+    /**
+     * date を設定します。
+     *
+     * @param date セットする date
+     */
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    /**
+     * number を取得します。
+     *
+     * @return number
+     */
+    public Integer getNumber() {
+        return number;
+    }
+
+    /**
+     * number を設定します。
+     *
+     * @param number セットする number
+     */
+    public void setNumber(Integer number) {
+        this.number = number;
+    }
+
+    /**
+     * email を取得します。
+     *
+     * @return email
+     */
+    public String getEmail() {
+        return email;
+    }
+
+    /**
+     * email を設定します。
+     *
+     * @param email セットする email
+     */
+    public void setEmail(String email) {
+        this.email = email;
     }
 
 }
