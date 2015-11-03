@@ -48,7 +48,7 @@
                 <a href="${pageContext.request.contextPath}/sample/loginSampleInsert">Create an account</a>
             </p>
             <p class="text-center">
-                <a href="${pageContext.request.contextPath}">Top page</a>
+                <a href="${pageContext.request.contextPath}/">Top page</a>
             </p>
 
         </div> <!-- /container -->

@@ -37,7 +37,7 @@
                         <div class="container">
                             <div class="carousel-caption">
                                 <h2>First slide top.</h2>
-                                <p><a class="btn btn-lg btn-primary" href="${pageContext.request.contextPath}" role="button">Top</a></p>
+                                <p><a class="btn btn-lg btn-primary" href="${pageContext.request.contextPath}/" role="button">Top</a></p>
                             </div>
                         </div>
                     </div>
@@ -85,7 +85,7 @@
                     <div class="col-lg-3">
                         <img class="img-circle" src="<c:url value="/resources/img/img9.jpg" />" width="140" height="140">
                         <h2>Top</h2>
-                        <p><a class="btn btn-default" href="${pageContext.request.contextPath}" role="button">Top</a></p>
+                        <p><a class="btn btn-default" href="${pageContext.request.contextPath}/" role="button">Top</a></p>
                     </div>
                     <div class="col-lg-3">
                         <img class="img-circle" src="<c:url value="/resources/img/avatar.png" />" width="140" height="140">

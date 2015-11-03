@@ -19,8 +19,8 @@
     <body>
         <div class="container">
             <h1>error page</h1>
-            <c:url value="/sample/loginsample/" var="url"/>
-            <h3><a href="${url}">sample login page</a></h3>
+            <h5><a href="${pageContext.request.contextPath}/">Top page</a></h5>
+            <h5><a href="${pageContext.request.contextPath}/sample/loginsample">Sample login page</a></h5>
             <hr>
 
             <p class="text-danger"><c:out value="<%= exception.getMessage() %>"/></p>

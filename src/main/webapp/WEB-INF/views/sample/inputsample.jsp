@@ -111,7 +111,7 @@
 
             <hr>
             <p class="text-center">
-                <a href="${pageContext.request.contextPath}">Top page</a>
+                <a href="${pageContext.request.contextPath}/">Top page</a>
             </p>
         </div>
 
