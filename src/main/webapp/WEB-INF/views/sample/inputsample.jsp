@@ -42,6 +42,7 @@
             <form:form action="${pageContext.request.contextPath}/sample/inputsample" method="post" modelAttribute="inputDto" >
 
                 <form:errors path="*" element="div" cssClass="text-danger" />
+                <hr>
 
                 <label>text</label>
                 <form:input path="text" cssClass="form-control" placeholder="Text" />
